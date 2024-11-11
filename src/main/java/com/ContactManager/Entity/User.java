@@ -3,6 +3,7 @@ package com.ContactManager.Entity;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -30,7 +31,7 @@ public class User {
 	private String image;
 	@Size(min = 6, message = "Minimum 6 character !!")
 	private String password;
-	private String role;
+	private String role; 
 	private boolean enable;
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
 	private List<Contact> contact;
