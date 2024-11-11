@@ -47,7 +47,7 @@ public class UserImp implements UserService {
 			e.printStackTrace();
 		}
 
-		user.setEnable(true);
+//		user.setEnable(true);
 		user.setRole("USER");
 		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 
