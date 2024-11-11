@@ -32,7 +32,7 @@ public class User {
 	@Size(min = 6, message = "Minimum 6 character !!")
 	private String password;
 	private String role; 
-	private boolean enable;
+	private boolean enable = true ;
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
 	private List<Contact> contact;
 
