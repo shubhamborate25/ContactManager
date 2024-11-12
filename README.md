@@ -1,3 +1,5 @@
+# Contact Manager 
+
  Developed a Contact Manager application using Spring Boot as the backend framework .
  
 Implemented Spring Security for authentication and authorization, enabling role-based access control to protect user data. 
